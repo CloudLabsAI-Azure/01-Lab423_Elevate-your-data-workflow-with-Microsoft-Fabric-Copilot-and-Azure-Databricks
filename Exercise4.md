@@ -15,92 +15,65 @@ In the exercise, we’ll explore how Data Engineer, Eva, ingested real-time data
 
     ![donotsave.png](media/labMedia/donotsave.png)  
 
-2. On the Real-Time Intelligence experience screen, click on **Eventhouse**.
+2. In the **Eventhouse name** field enter **Contoso-Eventhouse**.
 
-    ![eventhouse1.png](media/labMedia/eventhouse1.png)
+    ```
+    Contoso-Eventhouse
+    ```
 
-3. In the **Eventhouse name** field enter **Contoso-Eventhouse**.
+3. Click on the **Create** button and wait for the database to be created.
 
-```
-Contoso-Eventhouse
-```
+    ![eventhouse2.png](media/labMedia/eventhouse2.png)
 
-4. Click on the **Create** button and wait for the database to be created.
+    >**Note:** If you see a **pop-up** like the one in the screenshot below, ignore it and proceed with the next step.
 
-![eventhouse2.png](media/labMedia/eventhouse2.png)
+    ![eventhouse16.png](media/labMedia/eventhouse16.png)
 
->**Note:** If you see a **pop-up** like the one in the screenshot below, ignore it and proceed with the next step.
+4. Select **<inject key= "WorkspaceName" enableCopy="true"/>** workspace from the left navigation pane, click on **+New item**, then scroll down to the **Prepare data** section, and click on **Eventstream**.
 
-![eventhouse16.png](media/labMedia/eventhouse16.png)
+   ![eventhouse3.png](media/labMedia/f46.png)
 
-5. Click on the **experience** button at the **bottom left** corner of the screen (In this screenshot, **Real-Time Intelligence** is selected as an "Experience") and then select **Real-Time Intelligence**.
+>**Note :** If you have 10 items in the left navigation, you won't be able to create an Eventstream. Remove any unnecessary items and then proceed to create the Eventstream.
 
-![Realtime-Intelligence.png](media/labMedia/eventhouse3.png)
 
-6. click on **Eventstream** button.
+6. Enter the name as **RealtimeDataTo-KQL-DB** and click on **Create** button.
 
-![eventhouse4.png](media/labMedia/eventhouse4.png)
+    ```
+    RealtimeDataTo-KQL-DB
+    ```
 
-7. Enter the name as **RealtimeDataTo-KQL-DB** and click on **Create** button.
+    ![Eventst-name1.png](media/labMedia/Eventst-name1.png)
 
-```
-RealtimeDataTo-KQL-DB
-```
+7. Click on **Connect data sources**. 
 
-![Eventst-name1.png](media/labMedia/Eventst-name1.png)
+   ![eventhouse12.png](media/labMedia/eventhouse12.png)
 
-8. Click on the **Use external source** button.
-
-![eventhouse12.png](media/labMedia/eventhouse12.png)
-
-9. Click on the **Connect** button for **Azure Event Hubs**.
+8. Click on the **Connect** button for **Azure Event Hubs**.
 
 ![task-5.2.1new1.0.4.png](media/labMedia/task-5.2.1new1.0.4.png)
 
-10. Under the Connection field, click on **New connection**.
+9. Under the Connection field, click on **New connection**.
 
 ![eventhouse13.png](media/labMedia/eventhouse13.png)
 
-11. Enter the value for the **Event Hub namespace** as <inject key="eventhubNamespace" enableCopy="false"/> and enter the **Event Hub** value as **thermostat**.
 
-|                                                     |
- ----------------------------------------------------- 
-| <inject key="eventhubNamespace" enableCopy="true"/> |
--------------------------------------------------------
+10. Enter the value for the **Event Hub namespace** as **<inject key= "eventhubNamespace" enableCopy="true"/>** and enter the **Event Hub** value as **thermostat**.
 
-```
+   ```BASH
+   thermostat
+   ```
+
+   ![task-5.2.5-2.png](media/labMedia/task-5.2.5-2.png)
+
+
+10. Scroll down and select **Shared Access Key** from Authentication kind dropdown, enter the Shared Access Key Name as **thermostat**.
+
+```BASH
 thermostat
 ```
+11. Provide the **Shared access Key** as: **<inject key= "EventHubPolicyPrimaryKey" enableCopy="true"/>** and click on **Connect** button.
 
-![task-5.2.5-2.png](media/labMedia/task-5.2.5-2.png)
-
-12. Navigate back to the Resource Group <inject key="resourcegroup" enableCopy="false"/> in the Azure Portal, and search for **Event Hubs Namespace** and click on **<inject key="eventhubNamespace" enableCopy="false"/>**.
-
-![eventhubnamespace](media/eventhubsearchfield.png)
-
-13. Scroll down in the left navigation pane and click on **Event Hubs** under the **Entities** section.
-
->**Note:** If the **left navigation** bar is collapsed, click on the **hamburger icon** at the top to expand it.
-
-![eventhubnamespace](media/listeventhubs.png)
-
-14. Click on the **thermostat event hub**.
-
-![eventhubnamespace](media/thermostat.png)
-
-15. Click on **Shared access policies** in the left pane under Settings, then click on **thermostat** and finally copy the **primary key** and paste it in a notepad for further use.
-
->**Note:** Expand the **settings** option if the left navigations are collapsed.
-
-![eventhubnamespace](media/thermostatkey.png)
-
-16. Go back to the **Microsoft Fabric** and scroll down and select **Shared Access Key** for Authentication kind, enter the Shared Access Key Name as **thermostat** and then Enter the value copied in the earlier step for **Shared Access Key** and then click on the **Connect** button.
-
-```
-thermostat
-```
-
->**Note:** Close any pop-up that appears on the screen.
+>**Note:** Do not check in box to allow connection to be utilized with either on-premises or VNet data gateways.
 
 ![eventhouse14.png](media/labMedia/eventhouse14.png)
 
