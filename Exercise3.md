@@ -119,7 +119,7 @@ The first option, 'What’s in my data?' provides an overview of the contents of
 18. Click in the **Copilot chat** box field and enter the **prompt** below.
 
     ```
-    Create a report Bounce Rate analysis, to show the correlation between customer sentiment, particularly among millennials and Gen Z, unsuccessful product searches across different devices, and the website's bounce rate by customer generations.  
+    Create a Bounce Rate Analysis report that highlights the correlation between customer sentiment—especially among Millennials and Gen Z—unsuccessful product searches across different devices, and the website's bounce rate segmented by customer generation. Based on the results and data in the report, do you have any recommendations for improving the high bounce rate observed among the Millennial customer segments?  
     ```
     >**Note:** Wait for the prompt to populate.
 
