@@ -4,57 +4,41 @@ This exercise shows how Microsoft Fabric with Databricks enabled Contoso to solv
 
 ### Task 2.1: Create Delta Live Table pipeline for Data Transformation
 
-Delta Live Tables (DLT) allow you to build and manage reliable data pipelines that deliver high-quality data in Lakehouse. DLT helps data engineering teams simplify ETL development and management with declarative pipeline development, automatic data testing, and deep visibility for monitoring and recovery.
+1. Please use the following link to navigate to the Azure Databricks workspace **<inject key= "NewdatabricksWorkspaceUrl" enableCopy="True"/>**
 
-1. Go back to the browser tab of Resource Group **<inject key= "resourcegroup" enableCopy="false"/>**.
+2. Scroll down in the left navigation pane and click on **Pipelines**.
 
-2. Search for the Azure Databricks in the Resource group search field and click on **adb-ignite...**.
+    ![task-2.2.2new.png](media/labMedia/l9.png)
 
- <img src="media/databrickssearch.png" width="800"/> 
+4. Select the **Create pipeline** and then click on the **ETL Pipeline** button.
 
-3. Click on the **Launch Workspace**.
+    ![task-2.2.3.1new.png](media/labMedia/l10.png)
 
- <img src="media/launchdatabricks.png" width="800"/>
+5. Enter the name of the pipeline as **DLT_Pipeline** , scroll down to **Paths** and click on the **file icon** to browse the notebook.
 
->**Note:** Click on the **Sign in with Microsoft Entra ID** if it appears.
+    ```BASH
+    DLT_Pipeline
+    ```
 
-![databrickssignin.png](media/labMedia/databrickssignin.png)
+    ![task-2.2.3new.png](media/labMedia/task-2.2.3new.png)
 
-4. Scroll down in the left navigation pane and click on **Delta Live Table**.
+6. Click on **Shared**, click on **Analytics with ADB**, click on the **01 DLT Notebook** and then click on the **Select** button.
 
-![task-2.2.2new.png](media/labMedia/task-2.2.2new.png)
+   ![task-2.2.4new.png](media/labMedia/f13.png)
 
-5. Click on the **Create pipeline** button.
+7. Type **dbo** in **Default schema** feild and click on the **Create** button.
 
-![task-2.2.3.1new.png](media/labMedia/task-2.2.3.1new.png)
+   ![task-2.2.5new.png](media/labMedia/f45.png)
 
-6. Enter the name of the pipeline as **"DLT_Pipeline"** , scroll down to the **Paths** and click on the **file icon** to browse the notebook.
+8. Click on the **Start** button.
 
-```BASH
-DLT_Pipeline
-```
-![task-2.2.3new.png](media/labMedia/task-2.2.3new.png)
+    ![task-2.2.5new.png](media/labMedia/f14.png)
 
-7. Click on **Shared**.
-8. click on **Analytics with ADB**.
-9. click on the **01 DLT Notebook** and then click on the **Select** button.
+    >**Note**: The pipeline will take 5-7 minutes to complete. In the meantime, you can move on to the next section and return to this one afterward.
 
- <img src="media/labMedia/task-2.2.4new.png" width="800"/> 
+9. Once the execution is completed, we will see a result similar to the one in the following screenshot.
 
-10. Click on the **Create** button.
-
- <img src="media/labMedia/task-2.2.5new.png" width="800"/> 
-
-11. Click on **Start** button.
-
-![Databricks](media/startDLT.png)
-    
->**Note:** The pipeline will take 5-7 minutes to complete. In the meantime, you can move on to the next section and return to this one afterward.
-
-11. Once the **execution is completed**, we will see a result similar to the one in the following screenshot.
-
-
- <img src="media/labMedia/task-2.2.7.png" width="800"/> 
+     ![task-2.2.7.png](media/labMedia/task-2.2.7.png)
 
 This beautiful lineage view showing the Medallion Architecture is a data design pattern commonly used in Databricks to organize and optimize data processing workflows in a lakehouse architecture. It structures data into three logical layers—Bronze, Silver, and Gold—ensuring data quality, accessibility, and scalability for analytics and machine learning.
 
