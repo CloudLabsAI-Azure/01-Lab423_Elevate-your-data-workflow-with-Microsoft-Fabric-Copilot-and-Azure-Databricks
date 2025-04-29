@@ -133,7 +133,7 @@ The first option, 'What’s in my data?' provides an overview of the contents of
 
     >**Note:** The responses from Copilot may not match the ones in the screenshot but will provide a similar response.
 
-    ![query01.1.png](media/labMedia/query01.1.png)
+![query01.1.png](media/labMedia/query01.1.png)
 
 
 Based on this report, we notice that the website bounce rate for Contoso is especially high amongst the Millennial customer segment. Let’s ask Copilot if it has any recommendations for improving this bounce rate based on the results and data in the report.
