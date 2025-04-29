@@ -148,19 +148,15 @@ Now, let’s see how Data Engineer, Eva, got the remaining data into OneLake by 
  
     ![task-wb8S.png](media/labMedia/64.4.png)
 
-3. Click on the **+ Data Sources** button and then select **Lakehouses**
+3. Click on the **Add data items** button and then select from the dropdown **Existing data sources**
 
-    ![task-wb8S.png](media/labMedia/64.5.png)
+    ![task-wb8S.png](media/labMedia/additem041.png)
 
-4. Select **Existing Lakehouse with Schema** and then click on **Add** button.
+4. Select the **lakehouse** and then click on **Add** button.
 
-    ![task-wb8S.png](media/labMedia/64.6.png)
+    ![task-wb8S.png](media/labMedia/lakehouseconnect.png)
 
-5. Select the **lakehouse** and then click on **Add** button.
-
-    ![task-wb8S.png](media/labMedia/64.7.png)
-
-6. Once the notebook is created, paste the **below code** in the existing cell and run the cell by clicking on the **Run cell** icon.
+5. Once the notebook is created, paste the **below code** in the existing cell and run the cell by clicking on the **Run cell** icon.
 
 ```BASH
 import os
@@ -181,21 +177,21 @@ for file in csv_files:
 
 >**Note:** Please wait for the session to start and execute the cell.
 
-7. Once the **execution is successful** you'll see a **Green tick** appears at the bottom of cell.
-8. Click on the Stop icon in the ribbon at the top to **Stop the Spark session**.
-9. Click on **Lakehouse** in the left navigation bar.
+6. Once the **execution is successful** you'll see a **Green tick** appears at the bottom of cell.
+7. Click on the Stop icon in the ribbon at the top to **Stop the Spark session**.
+8. Click on **Lakehouse** in the left navigation bar.
 
     ![task-wb8S.png](media/64.9.png)
 
-10. Expand **Tables** and expand **dbo** under Tables. Click on the **three dots** (Ellipses) next to dbo and click **Refresh** from dropdown options.
+9. Expand **Tables** and expand **dbo** under Tables. Click on the **three dots** (Ellipses) next to dbo and click **Refresh** from dropdown options.
 
     ![task-wb8S.png](media/labMedia/64.10.1.png)
 
-11. View the successfully **loaded tables**.
+10. View the successfully **loaded tables**.
 
     ![task-wb8S.png](media/labMedia/64.10.png)
 
-12. Click on **website_bounce_rate** delta table and view the website bounce rate data.
+11. Click on **website_bounce_rate** delta table and view the website bounce rate data.
 
     ![StloadtableNew.png](media/labMedia/64.11.png)
 
