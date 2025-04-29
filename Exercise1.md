@@ -205,13 +205,13 @@ Using another great feature in Fabric’s Data Factory, called Fast Copy, Contos
 
 You will experience how easy it is to use Fast Copy to transform Litware's sales data into the Lakehouse.
 
-1. Click on the **experience** button at the **bottom left** corner of the screen (In this screenshot, **Data Engineering** is selected as an "Experience") and then select **Data Factory**.
+1. In the left pane, click on the **<inject key="WorkspaceName" enableCopy="false"/>** workspace, then select **New item**, and click on **Dataflow Gen2**.
 
-![task-1.3.1.png](media/labMedia/task-1.3.1.png)
+    ![task-1.3.1.png](media/labMedia/f9.png)
 
 2. Click on **Dataflow Gen2** under the **Recommended items to create**.
 
-![task-1.2.02.png](media/labMedia/task-1.2.02.png)
+  ![task-1.2.02.png](media/labMedia/task-1.2.02.png)
 
 3. Click on the **New Query** drop down and click on the **Get data** icon (**not on the dropdown arrow at the bottom of the icon**).
 
