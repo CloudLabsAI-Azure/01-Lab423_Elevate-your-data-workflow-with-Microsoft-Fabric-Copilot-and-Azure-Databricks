@@ -142,15 +142,19 @@ In this exercise, you’ll step into Data Analyst, Serena’s shoes and leverage
 
     ![task-5.2](media/labMedia/l22.png)
 
-4. In the Explorer pane, click on **+ Data source**, select **Lakehouse** from the available options, and then click **Add** to include it as a data source.
+4. In the Explorer pane, click on **+ Data source**.
+
+   ![task-5.2](media/labMedia/data938.png)
+
+5. Select **Lakehouse** from the available options, and then click **Add** to include it as a data source.
 
    ![task-5.2](media/labMedia/l23.png)
 
-5. Click on **Refresh** button.
+6. Click on **Refresh** button.
 
     ![task-5.2](media/labMedia/refresh9.png)
 
-6. Under lakehouse dropdown, expand **dbo**, and select the following tables as shown in the screenshot.
+7. Under lakehouse dropdown, expand **dbo**, and select the following tables as shown in the screenshot.
 
     - dimcustomer
     - dimdate
@@ -164,7 +168,7 @@ In this exercise, you’ll step into Data Analyst, Serena’s shoes and leverage
     >**Note:** If the tables are not visible, hard refresh the VM browser using **Ctrl + Shft + R**.
 
 
-7. Type **What is the most sold product?** in the chatbox and click on the **Send** icon.
+8. Type **What is the most sold product?** in the chatbox and click on the **Send** icon.
 
     ```BASH
         What is the most sold product?
@@ -174,7 +178,7 @@ In this exercise, you’ll step into Data Analyst, Serena’s shoes and leverage
 
     **Note:** This may take some time; wait until a response is received.
 
-8. Data agent answered the question fairly well based on the selected tables.
+9. Data agent answered the question fairly well based on the selected tables.
 
    However, the SQL query needs some improvement, it orders the products by order quantity, when total sales revenue associated with the product is the most important consideration, as shown in the above screenshot.
 
@@ -186,7 +190,8 @@ In this exercise, you’ll step into Data Analyst, Serena’s shoes and leverage
    The primary table to use is FactInternetSales. Only use FactResellerSales if explicitly asked about resales or when asked about total sales.
    ```
 
-9. Copy the above notes and click on the **Data agent instrutions** paste it in **Data agent instrutions** box. Type **What is the most sold product ?** in the chatbox and then click on the **Send** button.  
+10. Copy the above notes and click on the **AI Instructions** paste it in **AI instruction** input box. 
+11. Type **What is the most sold product?** in the chatbox and then click on the **Send** button.  
 
     ```BASH
     What is the most sold product?
@@ -194,7 +199,7 @@ In this exercise, you’ll step into Data Analyst, Serena’s shoes and leverage
 
     Asking the question again returns a different answer, **Mountain-200 Black, 46**, as shown in the below screenshot:
 
-    ![task-5.2](media/labMedia/AIskill8.png)
+      ![task-5.2](media/labMedia/aiinstruction.png)
 
    In addition to instructions, examples serve as another effective way to guide the AI. If you have questions that your AI skill often receives, or questions that require complex joins.
 
