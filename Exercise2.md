@@ -6,6 +6,10 @@ This exercise shows how Microsoft Fabric with Databricks enabled Contoso to solv
 
 1. Please use the following link to navigate to the Azure Databricks workspace:**<inject key= "NewdatabricksWorkspaceUrl" enableCopy="True"/>** and click on the **Sign in with Microsoft Entra ID** that appears.
 
+    ```
+    <inject key= "NewdatabricksWorkspaceUrl" enableCopy="True"/>
+    ```
+
     ![databrickssign.png](media/labMedia/databrickssign.png)
 
 2. Scroll down in the left navigation pane and click on **Pipelines**.
