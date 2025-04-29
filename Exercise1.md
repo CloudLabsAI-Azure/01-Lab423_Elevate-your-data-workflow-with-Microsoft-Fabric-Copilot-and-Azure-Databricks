@@ -209,9 +209,7 @@ You will experience how easy it is to use Fast Copy to transform Litware's sales
 
     ![task-1.3.1.png](media/labMedia/f9.png)
 
-2. Click on the **New Query** drop down and click on the **Get data** icon (**not on the dropdown arrow at the bottom of the icon**).
-
-    >**Note:**  If the **New query** dropdown is not visible click on **Get data** icon available at the same place.
+2. Click on the **Get data** icon (**not on the dropdown arrow at the bottom of the icon**).
 
     ![getdataSs.png](media/labMedia/getdataSs.png)
 
@@ -220,10 +218,6 @@ You will experience how easy it is to use Fast Copy to transform Litware's sales
 3. In the pop-up window, scroll down to **OneLake data hub** and click on **lakehouse**.
 
     ![task-1.2.04.S1.png](media/labMedia/task-1.2.04.S1.png)
-
-4. If you see a screen similar to the one shown below, click on the **Next** button otherwise move to the next step.
-
-    ![task-1.2.05.1.png](media/labMedia/task-1.2.05.1.png)
 
 5. Expand **lakehouse**, expand **Files** and expand **data** then scroll down.
 
@@ -240,6 +234,8 @@ You will experience how easy it is to use Fast Copy to transform Litware's sales
 **Let's use Copilot to perform data cleansing.**
 
 8. Click on the **Copilot** button, paste the **prompt** provided below in the following text box and click on the **send** icon.
+
+    >**Note:** If the copilot icon is not visible, click on the **>** under the Home ribbon to move the items. 
 
     ```BASH
     In the table sales_data csv, apply first row as headers.
