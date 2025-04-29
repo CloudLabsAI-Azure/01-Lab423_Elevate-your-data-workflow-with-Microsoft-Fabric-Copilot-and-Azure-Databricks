@@ -31,67 +31,57 @@ Let’s see how Copilot for Notebook helps you, as a Data Engineer, quickly crea
 
    ![task-3.1.2.png](media/labMedia/exercise5_1.3.1.png)
 
-4. Browse to the fabricnotebooks folder **"C:\LabFiles\02_Day\artifacts\fabricnotebooks"** in the VM and select **Build ML models and experiments using Copilot for Data Science in Fabric** notebook.
+4. Browse to the fabricnotebooks folder **"C:\LabFiles\02_lab\artifacts\fabricnotebooks"** in the VM and select **Build ML models and experiments using Copilot for Data Science in Fabric** notebook.
 
 5. Click on the **Open** button.
 
-![task-3.1.2.png](media/labMedia/exercise5_1.3.2.png)
+   ![task-3.1.2.png](media/labMedia/exercise5_1.3.2.png)
 
 6. Wait for the notebook to **upload**.
 
-![task-3.1.2.png](media/labMedia/exercise5_1.3.3.png)
+   ![task-3.1.2.png](media/labMedia/exercise5_1.3.3.png)
 
 7. Click on the **<inject key= "WorkspaceName" enableCopy="false"/>** workspace from the left navigation pane.
 
-![task-3.1.2.png](media/labMedia/exercise5_1.3.4.png)
+   ![task-3.1.2.png](media/labMedia/exercise5_1.3.4.png)
 
 8. Click on **Filter**, expand **Type** and select **Notebook**.
 
-![task-3.1.2.png](media/labMedia/exercise5_1.3.5.png)
+   ![task-3.1.2.png](media/labMedia/exercise5_1.3.5.png)
 
 9. Click on the **Build ML models and experiments using Copilot for Data Science in Fabric** notebook.
 
-![task-3.1.2.png](media/labMedia/exercise5_1.3.6.png)
+   ![task-3.1.2.png](media/labMedia/exercise5_1.3.6.png)
 
-10. Click on **Lakehouses** in the Explorer pane.
+10. Click on **+ Add data items** button and click on **Existing data sources**.
 
-![task-3.1.2.png](media/labMedia/exercise5_1.3.7.png)
+   ![task-3.1.2.png](media/labMedia/l15.png)
 
-11. Click on **Missing Lakehouses** and then click on **Remove all Lakehouse**.
+11. Select **lakehouse**, and click on **Connect** button.
 
-![task-3.1.2.png](media/labMedia/exercise5_1.3.8.png)
+   ![task-3.1.2.png](media/labMedia/l16.png)
 
-12. Click on the **Continue** button.
 
-![task-3.1.2.png](media/labMedia/exercise5_1.3.9.png)  
+12. In the Explorer pane, click on the **ellipsis (three dots)** next to your lakehouse and select **Set as default lakehouse**.
 
-13. Click on the **+ Lakehouse** button.
+   ![task-3.1.2.png](media/labMedia/l17.png)
 
-![task-3.1.2.png](media/labMedia/exercise5_1.3.10.png) 
 
-14. Select **Existing Lakehouse with Schema** and then click on the **Add** button.
+13. Click on **Connect** dropdown in the Home Ribbon and click on **New standard session** to connect to a session.
 
-![task-3.1.2.png](media/labMedia/64.6.png)
+   ![task-3.1.2.png](media/labMedia/standardsession.png)
 
-15. Select the **lakehouse** checkbox.
-
-![task-3.1.2.png](media/labMedia/exercise5_1.3.12.png)
-
-16. Click on the **Add** button.
-
-![task-3.1.2.png](media/labMedia/exercise5_1.3.13.png)
-
-17. Click on the **Copilot** button and then click on the **Get Started** button.
+14. Click on the **Copilot** button and then click on the **Get Started** button.
  
->**Note:** If the Copilot is not visible please click on eclipse **":"** and select Copilot.
+   >**Note:** If the Copilot is not visible please click on eclipse **":"** and select Copilot.
 
-![task-3.1.2.png](media/labMedia/exercise5_1.6.png)
+   ![task-3.1.2.png](media/labMedia/exercise5_1.6.png)
 
-18. Run the **first cell** of the notebook to install the copilot packages.
+15. Run the **first cell** of the notebook to install the copilot packages.
 
->**Note:** This may take a while to execute, please wait till this loads completely as seen by the **Play button** becoming visible again.
+   >**Note:** This may take a while to execute, please wait till this loads completely as seen by the **Play button** becoming visible again.
 
-![task-3.1.2.png](media/labMedia/exercise5_1.7.png)
+   ![task-3.1.2.png](media/labMedia/exercise5_1.7.png)
 
 19. Copy and paste the following **prompt** in the textbox.
 
@@ -101,25 +91,25 @@ Load the "customerchurndata" table from the lakehouse into a Spark DataFrame. Th
 
 20. Click on the **send** button.
 
-![task-3.1.2.png](media/labMedia/exercise5_1.8.png)
+   ![task-3.1.2.png](media/labMedia/exercise5_1.8.png)
 
 21. Click on the **Copy code** icon.
 
->**Note:** The new cell will be created right above the cell.
+   >**Note:** The new cell will be created right above the cell.
 
-![task-3.1.2.png](media/labMedia/exercise5_1.8.2.png)
+   ![task-3.1.2.png](media/labMedia/exercise5_1.8.2.png)
 
 22. Hover above the first cell and then click on a **+ Code** icon.
 
->**Note:** The new cell will be created right above the existing cell.
+   >**Note:** The new cell will be created right above the existing cell.
 
-![task-3.1.2.png](media/labMedia/exercise5_1.8.1.png)
+   ![task-3.1.2.png](media/labMedia/exercise5_1.8.1.png)
 
 23. Paste the copied **query** and run the new **cell**.
 
-![task-3.1.2.png](media/labMedia/exercise5_1.9.png)
+   ![task-3.1.2.png](media/labMedia/exercise5_1.9.png)
 
->**Note:** Copilot may not respond as expected, please copy and paste the following code if the code execution fails:
+   >**Note:** Copilot may not respond as expected, please copy and paste the following code if the code execution fails:
 
 ```
 # Load the table into a Spark DataFrame
