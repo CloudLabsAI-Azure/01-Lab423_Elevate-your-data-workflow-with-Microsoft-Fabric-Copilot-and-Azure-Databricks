@@ -118,21 +118,15 @@ Now, this is something exciting! This section shows how easy it is to create Sho
 
     ![shortcut111.png](media/labMedia/task-1.3-ext-shortcut-111u.png)
 
-
-
-8. Click on **Next** button.
-
-    ![task-1.3-ext-shortcut9.png](media/labMedia/task-1.3-ext-shortcut9.png)
-
-9. Select the **data** and **litwaredata** checkbox and then Click on the **Next** button.
+8. Select the **data** and **litwaredata** checkbox and then Click on the **Next** button.
 
     ![task-wb6.png](media/labMedia/task-wb6.png)
 
-10. Click on the **Create** button.
+9. Click on the **Create** button.
 
     ![task-1.3-ext-shortcut10.png](media/labMedia/task-1.3-ext-shortcut10.png)
 
-11. And there you go! Your shortcut is now ready! Click (do not expand) on the newly created shortcut named **litwaredata** and **data**.
+10. And there you go! Your shortcut is now ready! Click (do not expand) on the newly created shortcut named **litwaredata** and **data**.
 
     ![task-wb7.png](media/labMedia/64.1.png)
 
