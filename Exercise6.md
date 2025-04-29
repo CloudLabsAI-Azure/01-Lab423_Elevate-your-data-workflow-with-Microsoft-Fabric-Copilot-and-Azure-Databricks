@@ -20,12 +20,9 @@ Litware had a lot of their marketing data in the Azure SQL DB, so Contoso used D
 
 ![Task-6.1_3.png](media/labMedia/Task-6.1_3.png)
 
-4. In the **Server** field copy-paste <inject key="mssqlServer" enableCopy="false"/> , In **Database** field enter **SalesDb**.
+5. In the **Server** field, paste **<inject key= "mssqlServer" enableCopy="true"/>**
 
-|                                                     |
- -----------------------------------------------------
-| <inject key="mssqlServer" enableCopy="true"/>       |
--------------------------------------------------------
+6. In **Database** field paste **SalesDb**
 
 ![task-1.3.16.png](media/labMedia/task-6.2.6.png)
 
