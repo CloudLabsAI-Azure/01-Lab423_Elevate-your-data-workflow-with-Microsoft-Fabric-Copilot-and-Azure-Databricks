@@ -244,7 +244,7 @@ You will experience how easy it is to use Fast Copy to transform Litware's sales
     ![df1a2.png](media/labMedia/df1a2.png)
 
 
-    >**Note:** If Copilot needs additional context to understand your query, consider rephrasing the prompt to include more details.
+>**Note:** If Copilot needs additional context to understand your query, consider rephrasing the prompt to include more details.
 
 9. Scroll to the right-hand side and observe the **GrossRevenue** and **NetRevenue** columns. You'll notice the there are some empty rows with null values.
 
@@ -272,10 +272,6 @@ You will experience how easy it is to use Fast Copy to transform Litware's sales
     **Fast copy** enhances the data handling capabilities within Fabric, making **data transfers** faster and more seamless across the platform.
 
     >**Note:** Due to time constraints, we will not publish and run the Dataflow from the Pipeline.
-
-    >**Note:** If a pop-up page **Options** appears, scroll down to select **Scale** and tick **Allow use of fast copy connectors** checkbox then click on **OK**.
-
-    <img src="media/56.png" width="800"/> 
 
 13. Click on the **close** icon at top right of the **Dataflow** window.
 
