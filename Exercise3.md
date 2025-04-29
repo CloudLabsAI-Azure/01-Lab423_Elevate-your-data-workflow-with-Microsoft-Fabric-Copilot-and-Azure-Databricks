@@ -38,6 +38,8 @@ Based on all the gathered data, Wendy is expected to create Power BI reports for
 
 7. Select workspace as **<inject key= "WorkspaceName" enableCopy="false"/>** and click on expand icon next to **dbo** checkbox.
 
+    >**Note:** If you experience screen resolution issues or certain items are not visible, try adjusting the VM browser window size or resolution settings.
+
     ![task-new5.png](media/labMedia/task-new5.png)
 
 8. Click on expand icon next to **Tables** checkbox and scroll down.
@@ -50,9 +52,19 @@ Based on all the gathered data, Wendy is expected to create Power BI reports for
 
     >**Note:** Wait for the semantic model creation.
 
-10. To create a new report using this semantic model, click on **New Report** in the top bar.
- 
-    ![task-new7.png](media/labMedia/task-new7.png)
+10. Click on the **<inject key= "WorkspaceName" enableCopy="false"/>** from the left navigation menu, click on **Filter** and under **Type** select **Semantic model.**
+
+11. Click on **website_bounce_rate_model** semantic model.
+
+    ![task-new6.png](media/labMedia/f56.png)
+
+12. To create a new report using this semantic model, Click on **three dots ...** and click on **Create report**.
+
+    ![task-new7.png](media/labMedia/f58.png)
+
+    > **Note**: If you get a popup prompting you to upgrade to a Paid **Power BI Pro license**, simply click on the **Try free** button to activate the **Power BI Pro trial**, and click on **Got it**.
+
+    ![task-new7.png](media/labMedia/tryfree.png)
 
 11. Click on **Settings** icon and select **Power BI settings** from the 'Resources and extensions' section.
 
