@@ -211,89 +211,89 @@ You will experience how easy it is to use Fast Copy to transform Litware's sales
 
 2. Click on **Dataflow Gen2** under the **Recommended items to create**.
 
-  ![task-1.2.02.png](media/labMedia/task-1.2.02.png)
+    ![task-1.2.02.png](media/labMedia/task-1.2.02.png)
 
 3. Click on the **New Query** drop down and click on the **Get data** icon (**not on the dropdown arrow at the bottom of the icon**).
 
->**Note:**  If the **New query** dropdown is not visible click on **Get data** icon available at the same place.
+    >**Note:**  If the **New query** dropdown is not visible click on **Get data** icon available at the same place.
 
-![getdataSs.png](media/labMedia/getdataSs.png)
+    ![getdataSs.png](media/labMedia/getdataSs.png)
 
-There are 150+ source connections available to in Dataflow Gen2.
+    There are 150+ source connections available to in Dataflow Gen2.
 
 4. In the pop-up window, scroll down to **OneLake data hub** and click on **lakehouse**.
 
-![task-1.2.04.S1.png](media/labMedia/task-1.2.04.S1.png)
+    ![task-1.2.04.S1.png](media/labMedia/task-1.2.04.S1.png)
 
 5. If you see a screen similar to the one shown below, click on the **Next** button otherwise move to the next step.
 
-![task-1.2.05.1.png](media/labMedia/task-1.2.05.1.png)
+    ![task-1.2.05.1.png](media/labMedia/task-1.2.05.1.png)
 
 6. Expand **lakehouse**, expand **Files** and expand **data** then scroll down.
 
-![task-wb9.S.png](media/chosedata001.png)
+    ![task-wb9.S.png](media/chosedata001.png)
 
 7. Scroll down and select the **sales_data.csv** checkbox, then **click** on the **Create** button.
 
-![task-wb9.S.png](media/labMedia/chosesalesdata.png)
+    ![task-wb9.S.png](media/labMedia/chosesalesdata.png)
 
 8. Collapse the **Queries** pane and take a look at the sales dataset, the first row needs to be identified as a header (**note that the first row of this dataset is not a header**).
 
-![DFData.png](media/labMedia/DFData.png)
+    ![DFData.png](media/labMedia/DFData.png)
 
 **Let's use Copilot to perform data cleansing.**
 
 9. Click on the **Copilot** button, paste the **prompt** provided below in the following text box and click on the **send** icon.
 
-```BASH
-  In the table sales_data csv, apply first row as headers.
-```
+    ```BASH
+    In the table sales_data csv, apply first row as headers.
+    ```
 
-![df1a2.png](media/labMedia/df1a2.png)
+    ![df1a2.png](media/labMedia/df1a2.png)
 
 
->**Note:** If Copilot needs additional context to understand your query, consider rephrasing the prompt to include more details.
+    >**Note:** If Copilot needs additional context to understand your query, consider rephrasing the prompt to include more details.
 
 10. Scroll to the right-hand side and observe the **GrossRevenue** and **NetRevenue** columns. You'll notice the there are some empty rows with null values.
 
-![DFData12.png](media/labMedia/DFData12.png)
+    ![DFData12.png](media/labMedia/DFData12.png)
 
->**Let's use Copilot to remove empty rows.**
+    >**Let's use Copilot to remove empty rows.**
 
 11. Similarly, paste the prompt below in Copilot and click on the **send** icon.
 
-```BASH
-Remove empty rows from GrossRevenue and NetRevenue columns.
-```
-![DFData12.png](media/rememptyrow.png)
+    ```BASH
+    Remove empty rows from GrossRevenue and NetRevenue columns.
+    ```
+    ![DFData12.png](media/rememptyrow.png)
 
 12. Scroll to the right hand side and observe the **GrossRevenue** and **NetRevenue** columns (**there are no empty rows with null values**).
 
-![DFData13.png](media/labMedia/DFData13.png)
+    ![DFData13.png](media/labMedia/DFData13.png)
 
->**Note:** Expand the queries pane collapsed earlier.
+    >**Note:** Expand the queries pane collapsed earlier.
 
 13. Right-click on the query **sales_data.csv**, and select **Require Fast Copy**.
 
-<img src="media/55.png" width="800"/>  
+    <img src="media/55.png" width="800"/>  
 
-**Fast copy** enhances the data handling capabilities within Fabric, making **data transfers** faster and more seamless across the platform.
+    **Fast copy** enhances the data handling capabilities within Fabric, making **data transfers** faster and more seamless across the platform.
 
->**Note:** Due to time constraints, we will not publish and run the Dataflow from the Pipeline.
+    >**Note:** Due to time constraints, we will not publish and run the Dataflow from the Pipeline.
 
->**Note:** If a pop-up page **Options** appears, scroll down to select **Scale** and tick **Allow use of fast copy connectors** checkbox then click on **OK**.
+    >**Note:** If a pop-up page **Options** appears, scroll down to select **Scale** and tick **Allow use of fast copy connectors** checkbox then click on **OK**.
 
-<img src="media/56.png" width="800"/> 
+    <img src="media/56.png" width="800"/> 
 
 14. Click on the **close** icon at top right of the **Dataflow** window.
 
->**Note:** If necessary, scroll up to show the close icon.
+    >**Note:** If necessary, scroll up to show the close icon.
 
-<img src="media/dataflowclose.png" width="800"/> 
+    <img src="media/dataflowclose.png" width="800"/> 
 
 15. Click on **Yes.**
 
-![dataflowclose.png](media/closeyes.png)
+    ![dataflowclose.png](media/closeyes.png)
 
 
 Congrats on completing this data transformation exercise!
