@@ -101,7 +101,7 @@ thermostat
 RealTimeData
 ```
 
-21. In the **Workspace** field select <inject key="WorkspaceName" enableCopy="false"/>. 
+21. In the **Workspace** field select <inject key="WorkspaceName" enableCopy="true"/>. 
 
 22. In the **Eventhouse** dropdown select **Contoso-Eventhouse**.
 
@@ -148,56 +148,49 @@ Kusto Query Language is a powerful tool. In this scenario KQL is used to explore
 
 We use KQL to query the thermostat data that’s streaming in near real-time from the devices installed in Contoso’s stores.
 
-1. Click on **Workspaces** and select <inject key="WorkspaceName" enableCopy="false"/> workspace from the left navigation pane.
+1. Select **<inject key= "WorkspaceName" enableCopy="true"/>** workspace from the left navigation pane, click on **+New item**, then scroll down to the **Track data** section, and click on **KQLQueryset**.
 
-![task-5.3.1.png](media/labMedia/task-5.3.1.png)
+    ![task-5.3.1.png](media/labMedia/RTIQueryset.png)
 
-2. Click on the **experience** button at the **bottom left** corner of the screen (In this screenshot, **Real-Time Intelligence** is selected as an "Experience") and then select **Real-Time Intelligence**.
 
-![Realtime-Intelligence.png](media/labMedia/eventhouse3.png)
+2. In the **KQL Queryset name** field, copy-paste the following, "Query Thermostat Data in Near Real-time using KQL Script" and then click on the **Create** button.
 
-3. Click on **KQL Queryset** button.
+    ```
+    Query Thermostat Data in Near Real-time using KQL Script
+    ```
 
-![eventhouse9.png](media/labMedia/eventhouse9.png)
+    ![task-5.3.3.png](media/labMedia/task-5.3.3.png)
 
-4. In the **KQL Queryset name** field, copy-paste the following, "Query Thermostat Data in Near Real-time using KQL Script" and then click on the **Create** button.
+3. **Wait** for the query set creation and a new screen will display. In this screen, click on **Contoso-Eventhouse**, verify the workspace name and then click on the **Connect** button.
 
-```
-Query Thermostat Data in Near Real-time using KQL Script
-```
+    ![eventhouse10.png](media/labMedia/eventhouse10.png)
 
-![task-5.3.3.png](media/labMedia/task-5.3.3.png)
+4. Place your cursor inside the **query** field, select all using **Ctrl + A** and **delete** the pre-written query.
 
-5. **Wait** for the query set creation and a new screen will display. In this screen, click on **Contoso-Eventhouse**, verify the workspace name and then click on the **Connect** button.
+    ![task-5.3.5.png](media/labMedia/task-5.3.5.png)
 
-![eventhouse10.png](media/labMedia/eventhouse10.png)
+5. Click on the **Copilot** button.
 
-6. Place your cursor inside the **query** field, select all using **Ctrl + A** and **delete** the pre-written query.
+    ![eventhouse11.png](media/labMedia/eventhouse11.png)
 
-![task-5.3.5.png](media/labMedia/task-5.3.5.png)
+6. **Paste** the query provided below in the Copilot query section.
 
-7. Click on the **Copilot** button.
+    ```
+    Create a query to summarize average temperature every 1 min in line chart
+    ```
 
-![eventhouse11.png](media/labMedia/eventhouse11.png)
+7. Click on the **Send** icon.
 
-8. **Paste** the query provided below in the Copilot query section.
+    >**Note:** If you receive a response from Copilot such as "I am not sure" please ask the question again.
 
-```
-Create a query to summarize average temperature every 1 min in line chart
-```
+    >**Note:** The responses from Copilot may not match the ones in the screenshot but will provide a similar response. 
 
-9. Click on the **Send** icon.
+8. Click on the **Insert** button.
 
->**Note:** If you receive a response from Copilot such as "I am not sure" please ask the question again.
+    ![kqlqueyset1.png](media/labMedia/kqlqueyset1.png)
 
->**Note:** The responses from Copilot may not match the ones in the screenshot but will provide a similar response. 
+9. Place you cursor in the **script field**, click on the **Run** button and you get the desired result.
 
-10. Click on the **Insert** button.
-
-![kqlqueyset1.png](media/labMedia/kqlqueyset1.png)
-
-11. Place you cursor in the **script field**, click on the **Run** button and you get the desired result.
-
-![task-5.3.8.png](media/labMedia/task-5.3.8.png)
+    ![task-5.3.8.png](media/labMedia/task-5.3.8.png)
 
 Imagine one of the aisles had a sudden rise in temperature due to an anomaly. Customers start leaving that aisle and the wait times in the checkout lines start to increase but thanks to the KQL Queries, those anomalies would be tracked, and immediately notifications would be generated to bring the aisle temperature back to optimal levels!
