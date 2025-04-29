@@ -138,27 +138,27 @@ Now, let’s see how Data Engineer, Eva, got the remaining data into OneLake by 
 
 1. Click on Workspace **<inject key= "WorkspaceName" enableCopy="false"/>** and select **New item**.
 
-![task-wb8S.png](media/labMedia/64.2.png)
+    ![task-wb8S.png](media/labMedia/64.2.png)
 
 2. In the **New Item** tab, scroll down and click on **Notebook**
 
-![task-wb8S.png](media/labMedia/64.3.png)
+    ![task-wb8S.png](media/labMedia/64.3.png)
 
->**Note:**  If the **Pop-up** appears click on **Skip tour**
+    >**Note:**  If the **Pop-up** appears click on **Skip tour**
  
-<img src="media/labMedia/64.4.png" width="800"/>  
+    ![task-wb8S.png](media/labMedia/64.4.png)
 
 3. Click on the **+ Data Sources** button and then select **Lakehouses**
 
-![task-wb8S.png](media/labMedia/64.5.png)
+    ![task-wb8S.png](media/labMedia/64.5.png)
 
 4. Select **Existing Lakehouse with Schema** and then click on **Add** button.
 
-![task-wb8S.png](media/labMedia/64.6.png)
+    ![task-wb8S.png](media/labMedia/64.6.png)
 
 5. Select the **lakehouse** and then click on **Add** button.
 
-![task-wb8S.png](media/labMedia/64.7.png)
+    ![task-wb8S.png](media/labMedia/64.7.png)
 
 6. Once the notebook is created, paste the **below code** in the existing cell and run the cell by clicking on the **Run cell** icon.
 
@@ -185,19 +185,19 @@ for file in csv_files:
 8. Click on the Stop icon in the ribbon at the top to **Stop the Spark session**.
 9. Click on **Lakehouse** in the left navigation bar.
 
-![task-wb8S.png](media/64.9.png)
+    ![task-wb8S.png](media/64.9.png)
 
 10. Expand **Tables** and expand **dbo** under Tables. Click on the **three dots** (Ellipses) next to dbo and click **Refresh** from dropdown options.
 
-![task-wb8S.png](media/labMedia/64.10.1.png)
+    ![task-wb8S.png](media/labMedia/64.10.1.png)
 
 11. View the successfully **loaded tables**.
 
-![task-wb8S.png](media/labMedia/64.10.png)
+    ![task-wb8S.png](media/labMedia/64.10.png)
 
 12. Click on **website_bounce_rate** delta table and view the website bounce rate data.
 
-![StloadtableNew.png](media/labMedia/64.11.png)
+    ![StloadtableNew.png](media/labMedia/64.11.png)
 
 
 You now have all the table in **OneLake** for Contoso to leverage. Next, we proceed with data transformation using Dataflow Gen2 to transform the sales data ingested from Litware. 
