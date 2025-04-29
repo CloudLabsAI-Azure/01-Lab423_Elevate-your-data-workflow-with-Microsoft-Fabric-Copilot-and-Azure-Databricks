@@ -54,8 +54,6 @@ In this exercise, you will act as the Data Engineer, Eva, to transfer Contoso's 
 
     ![gotit-popup.png](media/labMedia/gotit-popup.png)
 
-    ![gotit-popup.1.png](media/labMedia/gotit-popup.1.png)
-
     >**Note:** Wait for the Power BI Workspace to load.
 
 
@@ -68,21 +66,21 @@ In this exercise, you will act as the Data Engineer, Eva, to transfer Contoso's 
 
 1. Click on **+ New item** button.
    
-![task-wb1.png](media/labMedia/lhnew-item.png)
+    ![task-wb1.png](media/labMedia/lhnew-item.png)
 
 2. In the pop-up window search for **Lakehouse** in the search bar and click on **Lakehouse**.
 
-![task-wb2.png](media/labMedia/lakehousesearch.png)
+    ![task-wb2.png](media/labMedia/lakehousesearch.png)
 
 3. Copy the name **lakehouse** from the following and paste it in the **Name** field.
 
 4. Click on the **Lakehouse schemas** checkbox and then click on the **Create** button.
    
-```BASH
-lakehouse
-```
+    ```BASH
+    lakehouse
+    ```
 
-![task-1.2.3.png](media/labMedia/task-1.2.3.png)
+    ![task-1.2.3.png](media/labMedia/task-1.2.3.png)
 
 
 In just a few seconds, the Lakehouse is ready. With the right access, you, as a Data Engineer, can effortlessly create a new Lakehouse. There is no need to set up any storage accounts or worry about network, infrastructure, key vault, Azure subscriptions, etc.
@@ -98,50 +96,45 @@ Now, this is something exciting! This section shows how easy it is to create Sho
 
 2. Click on **New shortcut**.
 
->**Note:** Make sure you create a shortcut under **Files** and not under **Tables** in the lakehouse explorer pane.
+    >**Note:** Make sure you create a shortcut under **Files** and not under **Tables** in the lakehouse explorer pane.
 
-![task-wb5.png](media/labMedia/task-wb5.png)
+    ![task-wb5.png](media/labMedia/task-wb5.png)
 
 3. In the pop-up window, under **External sources**, select the **Azure Data Lake Storage Gen2** source.
 
-![task-1.3-ext-shortcut4.png](media/labMedia/task-1.3-ext-shortcut4.png)
+    ![task-1.3-ext-shortcut4.png](media/labMedia/task-1.3-ext-shortcut4.png)
 
 >**Note:** Wait for the screen to load.
 
 4. Select **Create new Connection** radio button.
 
-5. In the screen below, we need to enter the connection details for the **ADLS Gen2** shortcut.
+5. In the following screen, we need to enter the connection details for the ADLS Gen2 shortcut.
 
-![task-1.3-ext-shortcut11.png](media/labMedia/task-1.3-ext-shortcut11.png)
+    ![shortcut111.png](media/labMedia/task-1.3-ext-shortcut-11u.png)
 
-6.Copy the **Data Lake Storage endpoint** from the below and paste it into the **URL** field. Select **Organization account** for the **Authentication Kind**, and then click on **Sign in**.
+6. Copy the **Data Lake Storage endpoint**: **<inject key= "storageEndpoint" enableCopy="true"/>** and paste it into the **URL** field.
 
-|                                                    |
------------------------------------------------------
-| <inject key= "storageEndpoint" enableCopy="true"/> |
------------------------------------------------------
+7. Select **Organization account** in the **Authentication Kind**, and ensure you are signed in and click on **Next**.
 
-![task-1.3-ext-shortcut-11.png](media/labMedia/task-1.3-ext-shortcut-11.png)
+    ![shortcut111.png](media/labMedia/task-1.3-ext-shortcut-111u.png)
 
-7. Click on your ID to complete the Sign in.
 
-![task-1.3-ext-shortcuts-11.png](media/labMedia/task-1.3-ext-shortcuts-11.png)
 
 8. Click on **Next** button.
 
-![task-1.3-ext-shortcut9.png](media/labMedia/task-1.3-ext-shortcut9.png)
+    ![task-1.3-ext-shortcut9.png](media/labMedia/task-1.3-ext-shortcut9.png)
 
 9. Select the **data** and **litwaredata** checkbox and then Click on the **Next** button.
 
-![task-wb6.png](media/labMedia/task-wb6.png)
+    ![task-wb6.png](media/labMedia/task-wb6.png)
 
 10. Click on the **Create** button.
 
-![task-1.3-ext-shortcut10.png](media/labMedia/task-1.3-ext-shortcut10.png)
+    ![task-1.3-ext-shortcut10.png](media/labMedia/task-1.3-ext-shortcut10.png)
 
 11. And there you go! Your shortcut is now ready! Click (do not expand) on the newly created shortcut named **litwaredata** and **data**.
 
-![task-wb7.png](media/labMedia/64.1.png)
+    ![task-wb7.png](media/labMedia/64.1.png)
 
 Prior to Microsoft Fabric, departments in Contoso had to move the data they needed from other departments via time-consuming ETL processes. But look, now they have created shortcuts. No need to move any of this data. That is the power of OneLake!
 
