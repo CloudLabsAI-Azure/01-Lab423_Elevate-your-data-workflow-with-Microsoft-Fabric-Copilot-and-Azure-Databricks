@@ -209,11 +209,7 @@ You will experience how easy it is to use Fast Copy to transform Litware's sales
 
     ![task-1.3.1.png](media/labMedia/f9.png)
 
-2. Click on **Dataflow Gen2** under the **Recommended items to create**.
-
-    ![task-1.2.02.png](media/labMedia/task-1.2.02.png)
-
-3. Click on the **New Query** drop down and click on the **Get data** icon (**not on the dropdown arrow at the bottom of the icon**).
+2. Click on the **New Query** drop down and click on the **Get data** icon (**not on the dropdown arrow at the bottom of the icon**).
 
     >**Note:**  If the **New query** dropdown is not visible click on **Get data** icon available at the same place.
 
@@ -221,29 +217,29 @@ You will experience how easy it is to use Fast Copy to transform Litware's sales
 
     There are 150+ source connections available to in Dataflow Gen2.
 
-4. In the pop-up window, scroll down to **OneLake data hub** and click on **lakehouse**.
+3. In the pop-up window, scroll down to **OneLake data hub** and click on **lakehouse**.
 
     ![task-1.2.04.S1.png](media/labMedia/task-1.2.04.S1.png)
 
-5. If you see a screen similar to the one shown below, click on the **Next** button otherwise move to the next step.
+4. If you see a screen similar to the one shown below, click on the **Next** button otherwise move to the next step.
 
     ![task-1.2.05.1.png](media/labMedia/task-1.2.05.1.png)
 
-6. Expand **lakehouse**, expand **Files** and expand **data** then scroll down.
+5. Expand **lakehouse**, expand **Files** and expand **data** then scroll down.
 
     ![task-wb9.S.png](media/chosedata001.png)
 
-7. Scroll down and select the **sales_data.csv** checkbox, then **click** on the **Create** button.
+6. Scroll down and select the **sales_data.csv** checkbox, then **click** on the **Create** button.
 
     ![task-wb9.S.png](media/labMedia/chosesalesdata.png)
 
-8. Collapse the **Queries** pane and take a look at the sales dataset, the first row needs to be identified as a header (**note that the first row of this dataset is not a header**).
+7. Collapse the **Queries** pane and take a look at the sales dataset, the first row needs to be identified as a header (**note that the first row of this dataset is not a header**).
 
     ![DFData.png](media/labMedia/DFData.png)
 
 **Let's use Copilot to perform data cleansing.**
 
-9. Click on the **Copilot** button, paste the **prompt** provided below in the following text box and click on the **send** icon.
+8. Click on the **Copilot** button, paste the **prompt** provided below in the following text box and click on the **send** icon.
 
     ```BASH
     In the table sales_data csv, apply first row as headers.
@@ -254,26 +250,26 @@ You will experience how easy it is to use Fast Copy to transform Litware's sales
 
     >**Note:** If Copilot needs additional context to understand your query, consider rephrasing the prompt to include more details.
 
-10. Scroll to the right-hand side and observe the **GrossRevenue** and **NetRevenue** columns. You'll notice the there are some empty rows with null values.
+9. Scroll to the right-hand side and observe the **GrossRevenue** and **NetRevenue** columns. You'll notice the there are some empty rows with null values.
 
     ![DFData12.png](media/labMedia/DFData12.png)
 
     >**Let's use Copilot to remove empty rows.**
 
-11. Similarly, paste the prompt below in Copilot and click on the **send** icon.
+10. Similarly, paste the prompt below in Copilot and click on the **send** icon.
 
     ```BASH
     Remove empty rows from GrossRevenue and NetRevenue columns.
     ```
     ![DFData12.png](media/rememptyrow.png)
 
-12. Scroll to the right hand side and observe the **GrossRevenue** and **NetRevenue** columns (**there are no empty rows with null values**).
+11. Scroll to the right hand side and observe the **GrossRevenue** and **NetRevenue** columns (**there are no empty rows with null values**).
 
     ![DFData13.png](media/labMedia/DFData13.png)
 
     >**Note:** Expand the queries pane collapsed earlier.
 
-13. Right-click on the query **sales_data.csv**, and select **Require Fast Copy**.
+12. Right-click on the query **sales_data.csv**, and select **Require Fast Copy**.
 
     <img src="media/55.png" width="800"/>  
 
@@ -285,13 +281,13 @@ You will experience how easy it is to use Fast Copy to transform Litware's sales
 
     <img src="media/56.png" width="800"/> 
 
-14. Click on the **close** icon at top right of the **Dataflow** window.
+13. Click on the **close** icon at top right of the **Dataflow** window.
 
     >**Note:** If necessary, scroll up to show the close icon.
 
     <img src="media/dataflowclose.png" width="800"/> 
 
-15. Click on **Yes.**
+14. Click on **Yes.**
 
     ![dataflowclose.png](media/closeyes.png)
 
