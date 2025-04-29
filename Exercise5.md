@@ -13,13 +13,19 @@ Copilot responds to queries in natural language or generates customized code sni
 
 Let’s see how Copilot for Notebook helps you, as a Data Engineer, quickly create Data Science Notebooks.
 
-1. Switch to the **Data Science** experience using the experience switcher icon in the left corner.
+1. Click on the **<inject key= "WorkspaceName" enableCopy="true"/>** workspace from the left navigation pane.
 
-   ![task-3.1.1.png](media/labMedia/exercise5_1.2.png)
+   ![task-3.1.2.png](media/labMedia/exercise5_1.3.4.png)
 
-2. Click on **Import notebook** button.
+   >**Note:** Click on **Don't save** if this pop-up appears.
 
-   ![task-3.1.2.png](media/labMedia/exercise5_1.3.png)
+   ![task-3.1.2.png](media/labMedia/f59.png)
+
+2. Click on **Import** dropdown, select **Notebook** and then select **From this computer**
+
+   ![task-3.1.2.png](media/labMedia/f16.png)
+
+   **Note:** If the Import option is not visible, click the **three dots (ellipsis)** button and select Import.
 
 3. Click on the **Upload** button.
 
