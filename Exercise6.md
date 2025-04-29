@@ -32,7 +32,7 @@ Litware had a lot of their marketing data in the Azure SQL DB, so Contoso used D
 labsqladmin
 ```
 ```
-Smoothie@2024
+Smoothie@2025
 ```
 
 ![connectsql.png](media/labMedia/connectsql.png)
@@ -51,17 +51,13 @@ Mirrored_SalesDb1
 
 ![Task-6.1_9.1.png](media/labMedia/Task-6.1_9.1.png)
 
-8. Click on **Monitor replication** button to track the replication status.
 
-![Task-6.1_10.png](media/labMedia/Task-6.1_10.png)
-
-9. Wait until the **Rows replicated** statistics are displayed. If not refresh the **Monitor replication** tab as shown in the below screen. Now, Azure SQL DB has been successfully mirrored.
+9. Wait for 5 Minutes to get the **Rows replicated** statistics are displayed. If not refresh the **Monitor replication** tab as shown in the below screen. Now, Azure SQL DB has been successfully mirrored.
 
 ![Task-6.1_11.png](media/labMedia/Task-6.1_11-Copy.png)
 
 >**Note:** It might take approximately 3-5 minutes for the Rows replicated column to get populated. Try clicking on the Refresh icon again.
 
-10. Close the **Monitor replication** window.
 
 ---
 
