@@ -77,35 +77,29 @@ Let’s see how Copilot for Notebook helps you, as a Data Engineer, quickly crea
 
    ![task-3.1.2.png](media/labMedia/exercise5_1.6.png)
 
-15. Run the **first cell** of the notebook to install the copilot packages.
-
-   >**Note:** This may take a while to execute, please wait till this loads completely as seen by the **Play button** becoming visible again.
-
-   ![task-3.1.2.png](media/labMedia/exercise5_1.7.png)
-
-19. Copy and paste the following **prompt** in the textbox.
+15. Copy and paste the following **prompt** in the textbox.
 
 ```
 Load the "customerchurndata" table from the lakehouse into a Spark DataFrame. Then convert that into pandas dataframe as df
 ```
 
-20. Click on the **send** button.
+16. Click on the **send** button.
 
    ![task-3.1.2.png](media/labMedia/exercise5_1.8.png)
 
-21. Click on the **Copy code** icon.
+17. Click on the **Copy code** icon.
 
    >**Note:** The new cell will be created right above the cell.
 
    ![task-3.1.2.png](media/labMedia/exercise5_1.8.2.png)
 
-22. Hover above the first cell and then click on a **+ Code** icon.
+18. Hover above the first cell and then click on a **+ Code** icon.
 
    >**Note:** The new cell will be created right above the existing cell.
 
    ![task-3.1.2.png](media/labMedia/exercise5_1.8.1.png)
 
-23. Paste the copied **query** and run the new **cell**.
+19. Paste the copied **query** and run the new **cell**.
 
    ![task-3.1.2.png](media/labMedia/exercise5_1.9.png)
 
@@ -132,111 +126,109 @@ AI Skill, a new capability in Fabric, allows Data Analysts like Serena to create
 
 In this exercise, you’ll step into Data Analyst, Serena’s shoes and leverage AI Skill to create conversational question-and-answer (Q&A) systems. 
 
-1. From the left navigation pane select **Data Science** experience.
+1. Click on the **<inject key= "WorkspaceName" enableCopy="true"/>** workspace from the left navigation pane.
 
-![task-5.2](media/labMedia/AIskill1.png)
+   ![task-3.1.2.png](media/labMedia/exercise5_1.3.4.png)
 
-2. Select **AI Skill**. If it is not visible, scroll down the page.
+2. Click on **New item** and search for **Data agent**. select **Data agent(Preview)**.
 
-![task-5.2](media/labMedia/AIskill2.png)
+    ![task-5.2](media/labMedia/l21.png)
 
-3. Enter Name as **Contoso-Assistance**  as the Create AI Skill name.
+3. In the **Create data agent** pop-up: Enter **Contoso-assistant** in the name field and click on **Create** button.
 
-![task-5.2](media/labMedia/AIskill3.png)
+    ```BASH
+    Contoso-assistant
+    ```
 
-4. Click on **lakehouse** and then click on the **Confirm** button.
+    ![task-5.2](media/labMedia/l22.png)
 
-![task-5.2](media/labMedia/AIskill4.png)
+4. In the Explorer pane, click on **+ Data source**, select **Lakehouse** from the available options, and then click **Add** to include it as a data source.
 
-5. Click on **refresh** and Expand **Tables** then select the following tables.
+   ![task-5.2](media/labMedia/l23.png)
 
-- dimcustomer
-- dimdate
-- dimproduct
-- dimreseller
-- factinternetsales
-- factresellersales
+5. Click on **Refresh** button.
 
-![task-5.2](media/labMedia/AIskill5.png)
+    ![task-5.2](media/labMedia/refresh9.png)
 
-6. Click on **Get Started** button.
+6. Under lakehouse dropdown, expand **dbo**, and select the following tables as shown in the screenshot.
 
-![task-5.2](media/labMedia/AIskill6.png)
+    - dimcustomer
+    - dimdate
+    - dimproduct
+    - dimreseller
+    - factinternetsales
+    - factresellersales
 
-7. Past the following question **What is the most sold product?** in the chatbox and click on the **Send** button.
+        ![task-5.2](media/labMedia/items.png)
 
-```
-What is the most sold product?
-```
+    >**Note:** If the tables are not visible, hard refresh the VM browser using **Ctrl + Shft + R**.
 
-![task-5.2](media/labMedia/AIskill7.png)
 
->**Note:** This may take some time; please wait until a response is received.
+7. Type **What is the most sold product?** in the chatbox and click on the **Send** icon.
 
-8. AI Skill answered the question fairly well based on the selected tables.
+    ```BASH
+        What is the most sold product?
+    ```
 
-However, the SQL query needs some improvement, it orders the products by order quantity, when total sales revenue associated with the product is the most important consideration, as shown in the above screenshot.
+   ![task-5.2](media/labMedia/AIskill7.png)
 
-To improve the query generation, let's provide some instructions, as shown in these examples:
+    **Note:** This may take some time; wait until a response is received.
 
-```
-Whenever I ask about "the most sold" products or items, the metric of interest is total sales revenue and not order quantity.
+8. Data agent answered the question fairly well based on the selected tables.
 
-The primary table to use is FactInternetSales. Only use FactResellerSales if explicitly asked about resales or when asked about total sales.
-```
+   However, the SQL query needs some improvement, it orders the products by order quantity, when total sales revenue associated with the product is the most important consideration, as shown in the above screenshot.
 
-9. Copy the above notes and paste it in **Notes for model** box.
-    
-10. Type **What is the most sold product ?** in the chatbox and then click on the **Send** button.  
+   To improve the query generation, let's provide some instructions, as shown in these examples:
 
-```
-What is the most sold product ?
-```
-Asking the question again returns a different answer, **Mountain-200 Black, 46**, as shown in the below screenshot:
+   ```
+   Whenever I ask about "the most sold" products or items, the metric of interest is total sales revenue and not order quantity.
 
-![task-5.2](media/labMedia/AIskill8.png)
+   The primary table to use is FactInternetSales. Only use FactResellerSales if explicitly asked about resales or when asked about total sales.
+   ```
 
-In addition to instructions, examples serve as another effective way to guide the AI. If you have questions that your AI skill often receives, or questions that require complex joins.
+9. Copy the above notes and click on the **Data agent instrutions** paste it in **Data agent instrutions** box. Type **What is the most sold product ?** in the chatbox and then click on the **Send** button.  
 
-10. In the example SQL queries click on **edit** icon.
+    ```BASH
+    What is the most sold product?
+    ```
 
-![task-5.2](media/labMedia/AIskill9.png)
+    Asking the question again returns a different answer, **Mountain-200 Black, 46**, as shown in the below screenshot:
 
->**Note:** Make sure you have allowed copy to clipboard in the browser lock.
+    ![task-5.2](media/labMedia/AIskill8.png)
 
-11. Click on **+ Add example** and enter the following question and their respective SQL queries.
+   In addition to instructions, examples serve as another effective way to guide the AI. If you have questions that your AI skill often receives, or questions that require complex joins.
 
->**Note:** Please make sure to delete the existing comment (-- Enter SQL query ) before entering the custom query.
+10. Click on the **Example queries** In the Example queries click on **edit** icon.
 
-|Question| SQL query|
-|--------|----------|
-|who are the top 5 customers by total sales amount?|SELECT TOP 5 CONCAT(dc.FirstName, ' ', dc.LastName) AS CustomerName, SUM(fis.SalesAmount) AS TotalSpent FROM factinternetsales fis JOIN dimcustomer dc ON fis.CustomerKey = dc.CustomerKey GROUP BY CONCAT(dc.FirstName, ' ', dc.LastName) ORDER BY TotalSpent DESC;|
-|what is the total sales amount by year?|SELECT dd.CalendarYear, SUM(fis.SalesAmount) AS TotalSales FROM factinternetsales fis JOIN dimdate dd ON fis.OrderDateKey = dd.DateKey GROUP BY dd.CalendarYear ORDER BY dd.CalendarYear;|
+    ![task-5.2](media/labMedia/l26.png)
 
->**Note:** This may take some time; please wait until the SQL query is copied to the box.
+11. Click on **+ Add Example**, enter the provided question along with its corresponding SQL query, and then click the **Close (X)** button.
 
-![task-5.2](media/labMedia/AIskill10.png)
+     ![task-5.2](media/labMedia/l27.png)
 
-12. Click on **close(X)** button.
+    |Question| SQL query|
+    |--------|----------|
+    |who are the top 5 customers by total sales amount?|SELECT TOP 5 CONCAT(dc.FirstName, ' ', dc.LastName) AS CustomerName, SUM(fis.SalesAmount) AS TotalSpent FROM factinternetsales fis JOIN dimcustomer dc ON fis.CustomerKey = dc.CustomerKey GROUP BY CONCAT(dc.FirstName, ' ', dc.LastName) ORDER BY TotalSpent DESC;|
 
-![task-5.2](media/labMedia/AIskill11.png)
+    >**Note** : After entering the first example and query, click the **+ Add Example** button.
 
-13. Type  the following **prompt** in the chatbox and click on **Send** button.
 
-```
-who are the top 5 customers by total sales amount?
-```
+12. Type **who are the top 5 customers by total sales amount?** in the chatbox and click on **Send** button.
 
-![task-5.2](media/labMedia/AIskill12.png)
+    ```BASH
+    who are the top 5 customers by total sales amount?
+    ```
 
-14. Click on **Publish** button.
+     ![task-5.2](media/labMedia/l28.png)
 
-![task-5.2](media/labMedia/AIskill13.png)
+13. Click on **Publish**.
 
-15. In the pop-up screen click on **Publish** button.
+    ![task-5.2](media/labMedia/AIskill13.png)
 
-![task-5.2](media/labMedia/AIskill14.png)
+14. In the pop-up screen click on the **Publish** button.
 
-16. Notice that AI skill is **published successfully**.
+    ![task-5.2](media/labMedia/AIskill14.png)
 
-![task-5.2](media/labMedia/AIskill15.png)
+15. Notice that AI skill is published successfully.
+
+    ![task-5.2](media/labMedia/AIskill15.png)
