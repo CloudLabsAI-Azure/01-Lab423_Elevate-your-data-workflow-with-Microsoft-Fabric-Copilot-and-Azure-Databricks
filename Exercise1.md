@@ -1,73 +1,70 @@
 ### Exercise 1: Data Engineering/Data Factory experience - Data ingestion from a spectrum of analytical data sources into OneLake
 
 *Before we start executing the steps, we will open a backup Click-by-Click lab using the following hyperlink in a new tab and navigate back to the VM browser:* 
+[Click-by-Click](https://regale.cloud/Microsoft/viewer/3088/modern-analytics-with-microsoft-fabric-copilot-and-azure-databricks-dream-lab-fu/index.html#/0/0) 
 
-[Click-by-Click](https://regale.cloud/Microsoft/viewer/3088/modern-analytics-with-microsoft-fabric-copilot-and-azure-databricks-dream-lab-fu/index.html#/0/0)
+   *Now, let's trigger the Simulator App to start streaming data to EventHub (**to be used later in exercise 4**).*
 
-*Now, let's trigger the Simulator App to start streaming data to EventHub (**to be used later in exercise 4**).*
+1. Open a **Microsoft Edge browser** from VM desktop.
 
-Open the new tab in the browser and copy paste the below URL to verify app service streaming data.
+2. Click on browser address bar and click **<inject key= "WebAppBrowse" enableCopy="true"/>** to browse app service and press **Enter**.
 
-|                                               |
- ------------------------------------------------
-|<inject key= "WebAppBrowse" enableCopy="true"/> |
- ------------------------------------------------
+  >**Note**: **Do not click anywhere else on the screen until all of the text has been auto-filled.**
 
-**Wait** for the page to load. You will see a page like the one shown below.
+3.**IMPORTANT!!** PROCEED WITH THE NEXT STEPS WHILE THIS LOADS.
 
 
-![task-1.3.png](media/labMedia/task-1.3.png)
+  ![](media/labMedia/task-1.3.png)
 
 
 ### Task 1.1: Create a Microsoft Fabric enabled workspace
+
 
 In this exercise, you will act as the Data Engineer, Eva, to transfer Contoso's data from Azure SQL Database into the Lakehouse and initiate data preparation for the upcoming merger between Contoso and Litware Inc.
 
 1. Open **Microsoft Fabric** in a new tab by copy pasting the below link.
 
-```BASH
-https://app.fabric.microsoft.com/home
-```
->**Note:** After pasting the link into the browser, the page will automatically log in if the user has completed the earlier steps of the **Get Started** instructions. In some cases, **Microsoft Fabric** may prompt the user to enter their **login details** to verify the account.
+   ```BASH
+   https://app.fabric.microsoft.com/home
+   ```
 
->**Note:** Wait for the Microsoft Fabric page to load and *close* the top bar for a better view.
+2. Sign in with your Azure AD credentials. If you are not already signed in, you will be redirected to the Microsoft Fabric login page.
 
-2. Scroll down below to the, **"Data Engineering"** and click on it.
+    >**Note:** Close any pop-up that appears on the screen.
 
-   <img src="media/dataengineer.png" width="800"/>   
+    ![](media/labMedia/image%20(5).png)
 
-3. Click on **+ New Workspace**.
+3. From the left navigation pane, click on **Workspaces** and then the **+ New workspace** button.
 
->**Note:** The screenshots in the exercises might differ slightly from the actual lab interface. Adjust your screen resolution as needed to locate and select the required items.
+    ![task-1.1.2.png](media/labMedia/task-1.1.2.png)
 
- <img src="media/newworkspace.png" width="800"/> 
+4. Type the name **<inject key= "WorkspaceName" enableCopy="true"/>**, **validate** the availability of the name, and click on **Advanced**.
 
+    >**Note:** Only use the workspace name provided above.
 
-4. Copy paste the Worksapce name **<inject key= "WorkspaceName" enableCopy="false"/>** in the **Name** field and click on **Apply** to create the workspace.
+    >**NOTE:** If the name **<inject key= "WorkspaceName" enableCopy="false"/>** is already taken, refresh the page and check again. A workspace with that name may already be created. If so, add a different suffix until the name is available.
 
+    ![works-apply.png](media/labMedia/workspace01.png)
 
-|                                               |
- -------------------------------------------------
-|<inject key= "WorkspaceName" enableCopy="true"/> |
- -------------------------------------------------
+5. Ensure **Fabric capacity** is enabled, verify that **fabric...- North Central US** is selected under **Capacity**, and then click **Apply**.
 
->**Note:** Only use the workspace name provided above.
+    ![works-apply.png](./media/labMedia/workspace02.png)
 
-![works-apply.png](media/labMedia/works-apply.png)
+    >**Note:** Close any pop-up that appears on the screen.
 
->**Note:** Close any pop-up that appears on the screen.
+    ![gotit-popup.png](media/labMedia/gotit-popup.png)
 
-![gotit-popup.png](media/labMedia/gotit-popup.png)
+    ![gotit-popup.1.png](media/labMedia/gotit-popup.1.png)
 
-![gotit-popup.png](media/labMedia/gotit-popup.1.png)
+    >**Note:** Wait for the Power BI Workspace to load.
 
 
 
 ### Create/Build a Lakehouse
 
-Now, let's see how each department can easily create a Lakehouse in the Contoso workspace without any provision. They simply provide a name, given the proper access rights of course!
+  Now, let's see how each department can easily create a Lakehouse in the Contoso workspace without any provision. They simply provide a name, given the proper access rights of course!
 
->**Note:** Verify that you are in the **<inject key= "WorkspaceName" enableCopy="false"/>** **Workspace** created in the earlier steps.
+  >**Note:** Verify that you are in the **<inject key= "WorkspaceName" enableCopy="false"/>** **Workspace** created in the earlier steps.
 
 1. Click on **+ New item** button.
    

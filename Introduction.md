@@ -32,6 +32,8 @@ THIS DEMO/LAB PROVIDES CERTAIN SOFTWARE TECHNOLOGY/PRODUCT FEATURES AND FUNCTION
  - Task 1.2: Use the New Shortcut option from external data sources
  - Task 1.3: Create Delta tables using Spark Notebook
  - Task 1.4: Leverage Dataflow Gen2 and Data pipelines for a "No Code-Low Code" experience to quickly ingest data with Fast Copy and transform it using Copilot
+ - Task 1.5: Explore Task Flows in Microsoft Fabric
+
 
 ## Exercise 2: Azure Databricks integration with Fabric: DLT Pipelines, Unity Catalog (Data governance), Mirrored Azure Databricks Catalog
 
