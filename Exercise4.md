@@ -7,17 +7,17 @@ Imagine, it is 6 am on the day of Contoso's big Thanksgiving sale. Customers are
 In the exercise, we’ll explore how Data Engineer, Eva, ingested real-time data from the event hub into the KQL Database to monitor in-store temperatures in real time.
 
 
-1. Click on the **experience** button at the **bottom left** corner of the screen (In this screenshot, **Data Factory** is selected as an "Experience") and then select **Real-Time Intelligence**.
+1. Select **<inject key= "WorkspaceName" enableCopy="true"/>** workspace from the left navigation pane, click on **+New item**, then scroll down to the **Store data** section, and click on **Eventhouse**.
 
-![Realtime-Intelligence.png](media/labMedia/Realtime-Intelligence.png)
+    ![task-5.4551.png](media/labMedia/RTIEventhouse.png)
 
->**Note:** If you see a pop-up like the one below, click on the **Don't save** button.
+    >**Note:** If you see a pop-up like the following one, click on the **Don't save** button.
 
-![donotsave.png](media/labMedia/donotsave.png) 
+    ![donotsave.png](media/labMedia/donotsave.png)  
 
 2. On the Real-Time Intelligence experience screen, click on **Eventhouse**.
 
-![eventhouse1.png](media/labMedia/eventhouse1.png)
+    ![eventhouse1.png](media/labMedia/eventhouse1.png)
 
 3. In the **Eventhouse name** field enter **Contoso-Eventhouse**.
 
