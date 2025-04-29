@@ -4,7 +4,9 @@ This exercise shows how Microsoft Fabric with Databricks enabled Contoso to solv
 
 ### Task 2.1: Create Delta Live Table pipeline for Data Transformation
 
-1. Please use the following link to navigate to the Azure Databricks workspace:**<inject key= "NewdatabricksWorkspaceUrl" enableCopy="True"/>**
+1. Please use the following link to navigate to the Azure Databricks workspace:**<inject key= "NewdatabricksWorkspaceUrl" enableCopy="True"/>** and click on the **Sign in with Microsoft Entra ID** that appears.
+
+    ![databrickssign.png](media/labMedia/databrickssign.png)
 
 2. Scroll down in the left navigation pane and click on **Pipelines**.
 
