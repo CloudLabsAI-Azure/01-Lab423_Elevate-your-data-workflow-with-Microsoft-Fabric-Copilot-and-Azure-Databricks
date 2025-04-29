@@ -127,11 +127,10 @@ The first option, 'What’s in my data?' provides an overview of the contents of
 
     ![query01.png](media/labMedia/query01.png)
 	
-    >**Note:** If you see the error message saying, 'Something went wrong.', try refreshing the page and restart the task. Being in a shared environment, the service may be busy at times.
-    > - If Copilot needs additional context to understand your query, consider rephrasing the prompt to include more details.
+>**Note:** If you see the error message saying, 'Something went wrong.', try refreshing the page and restart the task. Being in a shared environment, the service may be busy at times.
+> - If Copilot needs additional context to understand your query, consider rephrasing the prompt to include more details.
 
-
-    >**Note:** The responses from Copilot may not match the ones in the screenshot but will provide a similar response.
+>**Note:** The responses from Copilot may not match the ones in the screenshot but will provide a similar response.
 
 ![query01.1.png](media/labMedia/query01.1.png)
 
