@@ -16,11 +16,11 @@ This exercise shows how Microsoft Fabric with Databricks enabled Contoso to solv
 
     ![task-2.2.2new.png](media/labMedia/l9.png)
 
-4. Select the **Create pipeline** and then click on the **ETL Pipeline** button.
+3. Select the **Create pipeline** and then click on the **ETL Pipeline** button.
 
     ![task-2.2.3.1new.png](media/labMedia/l10.png)
 
-5. Enter the name of the pipeline as **DLT_Pipeline** , scroll down to **Paths** given in the **Source code** section and click on the **file icon** to browse the notebook.
+4. Enter the name of the pipeline as **DLT_Pipeline** , scroll down to **Paths** given in the **Source code** section and click on the **file icon** to browse the notebook.
 
     ```BASH
     DLT_Pipeline
@@ -28,21 +28,21 @@ This exercise shows how Microsoft Fabric with Databricks enabled Contoso to solv
 
     ![task-2.2.3new.png](media/labMedia/task-2.2.3new.png)
 
-6. Click on **Shared**, click on **Analytics with ADB**, click on the **01 DLT Notebook** and then click on the **Select** button.
+5. Click on **Shared**, click on **Analytics with ADB**, click on the **01 DLT Notebook** and then click on the **Select** button.
 
    ![task-2.2.4new.png](media/labMedia/f13.png)
 
-7. Type **dbo** in **Default schema** feild and click on the **Create** button.
+6. Type **dbo** in **Default schema** field and click on the **Create** button.
 
    ![task-2.2.5new.png](media/labMedia/f45.png)
 
-8. Click on the **Start** button.
+7. Click on the **Start** button.
 
     ![task-2.2.5new.png](media/labMedia/f14.png)
 
     >**Note**: The pipeline will take 5-7 minutes to complete. In the meantime, you can move on to the next section and return to this one afterward.
 
-9. Once the execution is completed, we will see a result similar to the one in the following screenshot.
+8. Once the execution is completed, we will see a result similar to the one in the following screenshot.
 
      ![task-2.2.7.png](media/labMedia/task-2.2.7.png)
 
@@ -108,10 +108,10 @@ Mirroring the Azure Databricks Catalog structure in Microsoft Fabric allows seam
 
     ![Task-2.3_8.png](media/labMedia/Task-2.3_8u.png)
 
-10. In the **Name** field enter **litware_unity_catalog** for your mirrored Databricks Catalog and click on the **Create** button.
+10. In the **Name** field enter **litware_unity_catalog1** for your mirrored Databricks Catalog and click on the **Create** button.
 
     ```BASH
-    litware_unity_catalog
+    litware_unity_catalog1
     ```
 
     ![Task-2.3_9.png](media/labMedia/Task-2.3_9.png)
