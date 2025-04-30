@@ -42,19 +42,19 @@ In this exercise, you will act as the Data Engineer, Eva, to transfer Contoso's 
 
     >**Note:** Only use the workspace name provided above.
 
-    >**NOTE:** If the name **<inject key= "WorkspaceName" enableCopy="false"/>** is already taken, refresh the page and check again. A workspace with that name may already be created. If so, add a different suffix until the name is available.
+>**NOTE:** If the name **<inject key= "WorkspaceName" enableCopy="false"/>** is already taken, refresh the page and check again. A workspace with that name may already be created. If so, add a different suffix until the name is available.
 
-    ![works-apply.png](media/labMedia/workspace01.png)
+![works-apply.png](media/labMedia/workspace01.png)
 
 5. Ensure **Fabric capacity** is enabled, verify that **fabric...- North Central US** is selected under **Capacity**, and then click **Apply**.
 
     ![works-apply.png](./media/labMedia/workspace02.png)
 
-    >**Note:** Close any pop-up that appears on the screen.
+>**Note:** Close any pop-up that appears on the screen.
 
-    ![gotit-popup.png](media/labMedia/gotit-popup.png)
+![gotit-popup.png](media/labMedia/gotit-popup.png)
 
-    >**Note:** Wait for the Power BI Workspace to load.
+>**Note:** Wait for the Power BI Workspace to load.
 
 
 
@@ -95,9 +95,9 @@ Now, this is something exciting! This section shows how easy it is to create Sho
 
 2. Click on **New shortcut**.
 
-    >**Note:** Make sure you create a shortcut under **Files** and not under **Tables** in the lakehouse explorer pane.
+>**Note:** Make sure you create a shortcut under **Files** and not under **Tables** in the lakehouse explorer pane.
 
-    ![task-wb5.png](media/labMedia/task-wb5.png)
+![task-wb5.png](media/labMedia/task-wb5.png)
 
 3. In the pop-up window, under **External sources**, select the **Azure Data Lake Storage Gen2** source.
 
@@ -153,7 +153,7 @@ Now, let’s see how Data Engineer, Eva, got the remaining data into OneLake by 
 
 4. Select the **lakehouse** and then click on **Connect** button.
 
-    ![task-wb8S.png](media/labMedia/lakehouseconnect.png)
+    ![lakehouseconnect.png](media/labMedia/lakehouseconnect.png)
 
 5. Once the notebook is created, paste the **below code** in the existing cell and run the cell by clicking on the **Run cell** icon.
 
@@ -192,7 +192,7 @@ for file in csv_files:
 
 11. Click on **website_bounce_rate** delta table and view the website bounce rate data.
 
-    ![StloadtableNew.png](media/labMedia/64.11.png)
+![64.11.png](media/labMedia/64.11.png)
 
 
 You now have all the table in **OneLake** for Contoso to leverage. Next, we proceed with data transformation using Dataflow Gen2 to transform the sales data ingested from Litware. 
@@ -206,79 +206,79 @@ You will experience how easy it is to use Fast Copy to transform Litware's sales
 
 1. In the left pane, click on the **<inject key="WorkspaceName" enableCopy="false"/>** workspace, then select **New item**, and click on **Dataflow Gen2**.
 
-    ![task-1.3.1.png](media/labMedia/f9.png)
+![task-1.3.1.png](media/labMedia/f9.png)
 
 2. Click on the **Get data** icon (**not on the dropdown arrow at the bottom of the icon**).
 
-    ![getdataSs.png](media/labMedia/getdataSs.png)
+![getdataSs.png](media/labMedia/getdataSs.png)
 
 3. In the pop-up window, scroll down to **Onelake catalog** and click on **lakehouse**.
 
-    ![task-1.2.04.S1.png](media/labMedia/task-1.2.04.S1.png)
+![task-1.2.04.S1.png](media/labMedia/task-1.2.04.S1.png)
 
 5. Expand **lakehouse**, expand **Files** and expand **data** then scroll down.
 
-    ![task-wb9.S.png](media/chosedata001.png)
+![task-wb9.S.png](media/chosedata001.png)
 
 6. Scroll down and select the **sales_data.csv** checkbox, then **click** on the **Create** button.
 
-    ![task-wb9.S.png](media/labMedia/chosesalesdata.png)
+![task-wb9.S.png](media/labMedia/chosesalesdata.png)
 
 7. Collapse the **Queries** pane and take a look at the sales dataset, the first row needs to be identified as a header (**note that the first row of this dataset is not a header**).
 
-    ![DFData.png](media/labMedia/DFData.png)
+![DFData.png](media/labMedia/DFData.png)
 
 **Let's use Copilot to perform data cleansing.**
 
 8. Click on the **Copilot** button, paste the **prompt** provided below in the following text box and click on the **send** icon.
 
-    >**Note:** If the copilot icon is not visible, click on the **>** under the Home ribbon to move the items. 
+>**Note:** If the copilot icon is not visible, click on the **>** under the Home ribbon to move the items. 
 
-    ```BASH
-    In the table sales_data csv, apply first row as headers.
-    ```
+```BASH
+In the table sales_data csv, apply first row as headers.
+```
 
-    ![df1a2.png](media/labMedia/df1a2.png)
+![df1a2.png](media/labMedia/df1a2.png)
 
 
 >**Note:** If Copilot needs additional context to understand your query, consider rephrasing the prompt to include more details.
 
 9. Scroll to the right-hand side and observe the **GrossRevenue** and **NetRevenue** columns. You'll notice the there are some empty rows with null values.
 
-    ![DFData12.png](media/labMedia/DFData12.png)
+![DFData12.png](media/labMedia/DFData12.png)
 
-    >**Let's use Copilot to remove empty rows.**
+>**Let's use Copilot to remove empty rows.**
 
 10. Similarly, paste the prompt below in Copilot and click on the **send** icon.
 
-    ```BASH
-    Remove empty rows from GrossRevenue and NetRevenue columns.
-    ```
-    ![DFData12.png](media/rememptyrow.png)
+```BASH
+Remove empty rows from GrossRevenue and NetRevenue columns.
+```
+![DFData12.png](media/rememptyrow.png)
 
 11. Scroll to the right hand side and observe the **GrossRevenue** and **NetRevenue** columns (**there are no empty rows with null values**).
 
-    ![DFData13.png](media/labMedia/DFData13.png)
+![DFData13.png](media/labMedia/DFData13.png)
 
-    >**Note:** Expand the queries pane collapsed earlier.
+>**Note:** Expand the queries pane collapsed earlier.
 
 12. Right-click on the query **sales_data.csv**, and select **Require Fast Copy**.
 
-    <img src="media/55.png" width="800"/>  
+<img src="media/55.png" width="800"/>  
 
-    **Fast copy** enhances the data handling capabilities within Fabric, making **data transfers** faster and more seamless across the platform.
+**Fast copy** enhances the data handling capabilities within Fabric, making **data transfers** faster and more seamless across the platform.
 
-    >**Note:** Due to time constraints, we will not publish and run the Dataflow from the Pipeline.
+>**Note:** Due to time constraints, we will not publish and run the Dataflow from the Pipeline.
 
 13. Click on the **close** icon at top right of the **Dataflow** window.
 
-    >**Note:** If necessary, scroll up to show the close icon.
+>**Note:** If necessary, scroll up to show the close icon.
 
-    <img src="media/dataflowclose.png" width="800"/> 
+<img src="media/dataflowclose.png" width="800"/> 
 
 14. Click on **Yes.**
 
-    ![dataflowclose.png](media/closeyes.png)
+![dataflowclose.png](media/closeyes.png)
 
 
 Congrats on completing this data transformation exercise!
