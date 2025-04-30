@@ -73,7 +73,7 @@ Let’s see how Copilot for Notebook helps you, as a Data Engineer, quickly crea
 
 14. Click on the **Copilot** button and then click on the **Get Started** button.
  
-   >**Note:** If the Copilot is not visible please click on eclipse **":"** and select Copilot.
+   >**Note:** If the Copilot is not visible please click on ellipsis (three dots) **...** and select Copilot.
 
    ![task-3.1.2.png](media/labMedia/exercise5_1.6.png)
 
@@ -152,26 +152,26 @@ In this exercise, you’ll step into Data Analyst, Serena’s shoes and leverage
 
 6. Click on **Refresh** button.
 
-    ![task-5.2](media/labMedia/refresh9.png)
+   ![task-5.2](media/labMedia/refresh9.png)
 
 7. Under lakehouse dropdown, expand **dbo**, and select the following tables as shown in the screenshot.
 
-    - dimcustomer
-    - dimdate
-    - dimproduct
-    - dimreseller
-    - factinternetsales
-    - factresellersales
+   - dimcustomer
+   - dimdate
+   - dimproduct
+   - dimreseller
+   - factinternetsales
+   - factresellersales
 
-        ![task-5.2](media/labMedia/items.png)
+      ![task-5.2](media/labMedia/items.png)
 
-    >**Note:** If the tables are not visible, hard refresh the VM browser using **Ctrl + Shft + R**.
+   >**Note:** If the tables are not visible, hard refresh the VM browser using **Ctrl + Shft + R**.
 
 
 8. Type **What is the most sold product?** in the chatbox and click on the **Send** icon.
 
     ```BASH
-        What is the most sold product?
+   What is the most sold product?
     ```
 
    ![task-5.2](media/labMedia/AIskill7.png)

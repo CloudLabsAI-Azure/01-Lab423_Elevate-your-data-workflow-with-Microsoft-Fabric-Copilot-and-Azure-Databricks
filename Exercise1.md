@@ -74,11 +74,10 @@ In this exercise, you will act as the Data Engineer, Eva, to transfer Contoso's 
 
 3. Copy the name **lakehouse** from the following and paste it in the **Name** field.
 
-4. Click on the **Lakehouse schemas** checkbox and then click on the **Create** button.
-   
     ```BASH
     lakehouse
     ```
+4. Click on the **Lakehouse schemas** checkbox and then click on the **Create** button.
 
     ![task-1.2.3.png](media/labMedia/task-1.2.3.png)
 
@@ -126,7 +125,7 @@ Now, this is something exciting! This section shows how easy it is to create Sho
 
     ![task-1.3-ext-shortcut10.png](media/labMedia/task-1.3-ext-shortcut10.png)
 
-10. And there you go! Your shortcut is now ready! Click (do not expand) on the newly created shortcut named **litwaredata** and **data**.
+10. And there you go! Your shortcut is now ready! We can see the newly created shortcut named **litwaredata** and **data**.
 
     ![task-wb7.png](media/labMedia/64.1.png)
 
@@ -148,11 +147,11 @@ Now, let’s see how Data Engineer, Eva, got the remaining data into OneLake by 
  
     ![task-wb8S.png](media/labMedia/64.4.png)
 
-3. Click on the **Add data items** button and then select from the dropdown **Existing data sources**
+3. Click on the **Add data items** button and then select **Existing data sources** from the dropdown.
 
     ![task-wb8S.png](media/labMedia/additem041.png)
 
-4. Select the **lakehouse** and then click on **Add** button.
+4. Select the **lakehouse** and then click on **Connect** button.
 
     ![task-wb8S.png](media/labMedia/lakehouseconnect.png)
 
@@ -213,9 +212,7 @@ You will experience how easy it is to use Fast Copy to transform Litware's sales
 
     ![getdataSs.png](media/labMedia/getdataSs.png)
 
-    There are 150+ source connections available to in Dataflow Gen2.
-
-3. In the pop-up window, scroll down to **OneLake data hub** and click on **lakehouse**.
+3. In the pop-up window, scroll down to **Onelake catalog** and click on **lakehouse**.
 
     ![task-1.2.04.S1.png](media/labMedia/task-1.2.04.S1.png)
 

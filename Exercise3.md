@@ -66,25 +66,25 @@ Based on all the gathered data, Wendy is expected to create Power BI reports for
 
     ![task-new7.png](media/labMedia/tryfree.png)
 
-11. Click on **Settings** icon and select **Power BI settings** from the 'Resources and extensions' section.
+13. Click on **Settings** icon and select **Power BI settings** from the 'Resources and extensions' section.
 
     >**Note:** If the Settings icon is not visible, click on the **ellipsis** in the top-right corner and then select **Settings**.
 
     ![task-new6.1.png](media/labMedia/task-new6.1.png)
 
-12. Click on the **Semantic models** tab and select **website_bounce_rate_model** semantic model from the left pane.
+14. Click on the **Semantic models** tab and select **website_bounce_rate_model** semantic model from the left pane.
 
     ![task-new6.2.png](media/labMedia/task-new6.2.png)
 
-13. Scroll down to **Q&A** section and expand it, then select **Turn on Q&A to ask natural language questions about your data** checkbox, and click on **Apply**.
+15. Scroll down to **Q&A** section and expand it, then select **Turn on Q&A to ask natural language questions about your data** checkbox, and click on **Apply**.
 
     ![task-new6.3.png](media/labMedia/task-new6.3.png)
 
-14. Click on **Untitled report** from the left pane.
+16. Click on **Untitled report** from the left pane.
 
     ![task-new6.3.png](media/labMedia/qna1.png)
 
-15. Click on the **Copilot** icon and collapse the other panes named Filters, Visualizations and Data.
+17. Click on the **Copilot** icon and collapse the other panes named Filters, Visualizations and Data.
 
     ![task-new6.4.png](media/labMedia/task-new6.4.png)
 
@@ -92,17 +92,17 @@ Based on all the gathered data, Wendy is expected to create Power BI reports for
 
     ![coplitclose.png](media/labMedia/coplitclose.png)
 
-16. Click on **Preview button** to the right side to enable it and click on **Get started**.
+18. Click on **Preview button** to the right side to enable it and click on **Get started**.
 
     ![task-new6.5.png](media/labMedia/task-new6.5.png)
 
 You will now see how easy it is for the data analyst to create compelling Power BI reports and get deep insights with literally no hands-on coding!
 	
-17. Click on the **Prompt Guide** button.
+19. Click on the **Prompt Guide** button.
 
     ![promptguide.png](media/labMedia/promptguide.png)  
 
-18. Select the option **What's in my data?**
+20. Select the option **What's in my data?**
 
     > **Note:** If you don't see the 'What's in my data?' option, click in the **Copilot chat box** field, enter the prompt below, and click the **Send** button: 
 
@@ -116,14 +116,14 @@ The first option, 'What’s in my data?' provides an overview of the contents of
 
 ![promptguide2.1.png](media/labMedia/promptguide2.1.png)
 
-18. Click in the **Copilot chat** box field and enter the **prompt** below.
+21. Click in the **Copilot chat** box field and enter the **prompt** below.
 
     ```
     Create a Bounce Rate Analysis report that highlights the correlation between customer sentiment—especially among Millennials and Gen Z—unsuccessful product searches across different devices, and the website's bounce rate segmented by customer generation. Based on the results and data in the report, do you have any recommendations for improving the high bounce rate observed among the Millennial customer segments?  
     ```
     >**Note:** Wait for the prompt to populate.
 
-19. Click on the **Send** button and wait for the results to load. 
+22. Click on the **Send** button and wait for the results to load. 
 
     ![query01.png](media/labMedia/query01.png)
 	
@@ -139,7 +139,7 @@ Based on this report, we notice that the website bounce rate for Contoso is espe
 
 We’ll ask Copilot for suggestions based on the results and data in the report. 
 
-20. Enter the below prompt in Copilot, and press the **Send** button.
+23. Enter the below prompt in Copilot, and press the **Send** button.
 
     ```
     Based on the data in the page, what can be done to improve the bounce rate of   millennials? 
@@ -147,25 +147,25 @@ We’ll ask Copilot for suggestions based on the results and data in the report.
 	
     ![task-new13.png](media/labMedia/task-new13.png)
 	
-21. Look at the suggestions Copilot provided. Copilot creates the desired Power BI report and even goes a step further to give powerful insights. Wendy realizes that for the website bounce rate to improve, Contoso needs to transform their mobile website experience for millennials. This helps them reduce their millennial related customer churn too! Now, what if Contoso’s leadership team needed a quick summary of this entire report? **Smart Narrative** to the rescue! 
+24. Look at the suggestions Copilot provided. Copilot creates the desired Power BI report and even goes a step further to give powerful insights. Wendy realizes that for the website bounce rate to improve, Contoso needs to transform their mobile website experience for millennials. This helps them reduce their millennial related customer churn too! Now, what if Contoso’s leadership team needed a quick summary of this entire report? **Smart Narrative** to the rescue! 
 	
     ![task-new14.png](media/labMedia/task-new14.png)
 	
-22. Expand the **Visualizations** pane and select the **Narratives** visual. 
+25. Expand the **Visualizations** pane and select the **Narratives** visual. 
 
     ![visualizations.png](media/labMedia/visualizations.png)
 
-23. Adjust and expand the **narrative box** from the corner to get a better readable view of the result.
+26. Adjust and expand the **narrative box** from the corner to get a better readable view of the result.
 
     ![open-narrative.png](media/labMedia/expand-arrow.png)
 
-24. Click on **Copilot (preview)** button within the visual.
+27. Click on **Copilot (preview)** button within the visual.
 
     ![open-narrative.png](media/labMedia/open-narrative.png)
 	
-24. Click on **Give an executive summary**. 
+28. Click on **Give an executive summary**. 
 
-25. Click on **Update** and observe the generated summary. See how easy it was to get an executive summary with absolutely no IT resource dependency!
+29. Click on **Update** and observe the generated summary. See how easy it was to get an executive summary with absolutely no IT resource dependency!
  
     > **Note:** If you see the prompt populated in the Copilot text box move to the next step otherwise, click on the **Copilot narrative** text box, enter the given below prompt, and then click on Update.
 
@@ -174,13 +174,13 @@ We’ll ask Copilot for suggestions based on the results and data in the report.
     ```
     ![task-new16.png](media/labMedia/task-new16.png)
 
-26. Click on the **Close** button in the pop-up window.
+30. Click on the **Close** button in the pop-up window.
 
     ![close-copilot.png](media/labMedia/close-copilot.png)
 
 See how easy it was to get an executive summary with absolutely no IT resource dependency!
 
-27. Click on **Happy** from **Customer Sentimental Distribution - pie chart visual** and observe how the Executive summary is updating.
+31. Click on **Happy** from **Customer Sentimental Distribution - pie chart visual** and observe how the Executive summary is updating.
 
     >**Note:** The responses from Copilot may not match the ones in the screenshot but will provide a similar response.
 

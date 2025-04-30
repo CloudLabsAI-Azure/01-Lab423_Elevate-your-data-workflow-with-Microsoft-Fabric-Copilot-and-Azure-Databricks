@@ -20,7 +20,7 @@ This exercise shows how Microsoft Fabric with Databricks enabled Contoso to solv
 
     ![task-2.2.3.1new.png](media/labMedia/l10.png)
 
-5. Enter the name of the pipeline as **DLT_Pipeline** , scroll down to **Paths** and click on the **file icon** to browse the notebook.
+5. Enter the name of the pipeline as **DLT_Pipeline** , scroll down to **Paths** given in the **Source code** section and click on the **file icon** to browse the notebook.
 
     ```BASH
     DLT_Pipeline
