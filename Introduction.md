@@ -62,6 +62,7 @@ THIS DEMO/LAB PROVIDES CERTAIN SOFTWARE TECHNOLOGY/PRODUCT FEATURES AND FUNCTION
 - Task 6.2: Analyze the Mirrored Azure SQL Database data using T-SQL
 
 ## Overview
+
 ![buildarch.png](media/labMedia/ignite_architecture_diagram.png)
 
 This lab showcases Microsoft Fabric with Copilot and Azure Databricks, featuring a cost-effective, performance-optimized, and cloud-native Analytics solution pattern. This architecture unifies our customers' data estate to accelerate data value creation.
